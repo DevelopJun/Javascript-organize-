@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Js hello World</title>
+    </head>
+    <body>
+        <h3 id="result"></h3>
+        <script>
+            // 출력문 예제, 자바스크립트에서 기본 출력은 console, alert, document 이다. 
+            var name = 'JungJunho'
+            document.getElementById("result").innerHTML = name; // 저 함수는 id가 result 인 태글르 찾아 일믕르 출력 하라는 뜻.
+            alert(name);
+            console.log(name);
+
+            let level = prompt("Enter your level(A/B/C)");
+
+            switch(level) {
+                case 'A' :
+                    console.log('VIP Level');break;
+                case 'B' :
+                    console.log('Basic Level');break;
+                default :
+                    console.log('No Level');break;
+            }
+        </script>
+    </body>
+</html>
+<!-- https://dinfree.com/lecture/frontend/123_js_exam.html -->

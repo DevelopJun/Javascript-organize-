@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Js hello World</title>
+    </head>
+    <body>
+        <script>
+            function calc(a, b){
+                let sum1 = a + b;
+                sum2 = a + b;
+                return sum1;
+            }
+            console.log(calc1(20, 50)); // 70
+
+            var calc1 = function(a, b){
+                return a + b;
+            }
+
+            function calc2(func){
+                console.log(func(20,30)); // 함수의 인자로 함수를 전달한다. 
+            }
+            // 배열 원소로 함수를 선언함. 
+            let fucArr = [function() {console.log("v1")},"v2"];
+            // 맵 원소로 함수를 선언함. 
+            let mapArr = new Map();
+            mapArr.set("calcFunc", function(n1, n2) {return n1 * n2});
+
+            console.log(funcArr[0]());
+            console.log(mapArr.get("calcFunc")(20,10)); // map의 원소로도 함수르 사용할 수 있다.
+            
+
+        </script>
+    </body>
+</html>

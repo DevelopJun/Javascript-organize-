@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Js hello World</title>
+    </head>
+    <body>
+        <script>
+            let student = {
+            'id': 2019101,
+            'name': 'Kill name',
+            'scores': [95,80,91,85],
+            'getTotalScore': function() {
+                return this.scores.reduce((prev, curr) => prev + curr);
+                } // reduce함수는 더 깊게 찾아봐야함. 
+            }
+
+            console.log(student.getTotalScore());
+           
+        </script>
+    </body>
+</html>
+<!-- https://dinfree.com/lecture/frontend/123_js_exam.html -->

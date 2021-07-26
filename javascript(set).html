@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Js hello World</title>
+    </head>
+    <body>
+        <script>
+            // 비어있는 새로운 set 을 만듬
+            let setA = new Set();
+            // 새로운 set 을 만들고 인자로 전달된 iterable 로 인자를 채움
+            let setB = new Set().add('a').add('b');
+            setB.add('c');
+            console.log(setB.size); // 3
+            // has(): 주어진 값이 set 안에 존재할 경우, true 를 반환
+            // indexOf() 보다 빠름. 단, index 가 없음
+            console.log(setB.has('b')); // true
+            // set 에서 주어진 값을 제거
+            setB.delete('b');
+            console.log(setB.has('b')); // false
+            // set 안의 모든 데이터를 제거
+            setB.clear();
+            console.log(setB.size); // 0
+
+        </script>
+    </body>
+</html>

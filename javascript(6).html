@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Js hello World</title>
+    </head>
+    <body>
+        <script>
+        const colors = ['red', 'blue', 'green'];
+        console.log("Original Array: ",colors);
+
+        colors.push('yellow');
+        console.log("push('yellow'):", colors);
+
+        colors.pop();
+        console.log('pop(): ', colors);
+
+        colors.reverse();
+        console.log('reverse(): ', colors);
+
+        colors.sort();
+        console.log('sort(): ', colors);
+
+        const splicedcolors = colors.splice(0, 2);
+        console.log('splice():', splicedcolors);
+
+        const newColors = colors.join("-");
+        console.log('join():', newColors);
+        // 파이썬 내장함수랑 비슷한 부분이 많음. 
+        </script>
+    </body>
+</html>
+<!-- https://dinfree.com/lecture/frontend/123_js_exam.html -->

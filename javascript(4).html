@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Js hello World</title>
+    </head>
+    <body>
+        <script>
+            console.log('## for ##');
+            const colors = ['red', 'blue', 'green']
+            for(let i = 0; i < colors.length; i++){
+                console.log( colors[i] );
+            }
+
+            console.log('## while ## ')
+            var i=0;
+            while(colors[i] != null){
+                console.log( colors[i] );
+                i++;
+            }
+
+            console.log("## forEach ## ");
+            colors.forEach(function(value){
+                console.log(value);
+            });
+            
+            console.log('## forEach with Arrow ##');
+            colors.forEach( value => console.log(value));
+        </script>
+    </body>
+</html>
+<!-- https://dinfree.com/lecture/frontend/123_js_exam.html -->

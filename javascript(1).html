@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Js hello World</title>
+    </head>
+    <body>
+        <script>
+            var name = prompt('Input your name!!'); // promt() 함수는 간단한 입력을 받을 수 있는 내장 함수 
+            document.write('Welcome' + name); // 입력값을 변수에 담아 document.write()함수로 본문에 출력 
+
+            var txt1 = 'text1';
+            console.log(txt1);
+
+            if(true){
+                var txt2 = 'text2';
+                console.log(txt2);
+            }
+
+            console.log(txt1);
+            console.log(txt2); // js에서는 if 블럭 안에 쓰이뉴 txt2는 블럭 밖에서 사용 가능하다. 일반적인 언어들에서는 불가능. 
+
+            let txt1_1 = 'text1_1'; // 이렇게 let으로 선언된 txt2_2 는 블럭 밖에서 참조 불가능 
+            const txt3 = 'hello'; // const로 선언된 txt3는 값 변경 불가능.
+            console.log(txt1_1);
+
+            if(true){
+                let txt2_2 = 'text2_2'; // 이렇게 
+                console.log(txt2_2);
+            }
+            console.log(txt1_1);
+            console.log(txt3);
+
+        </script>
+    </body>
+</html>
+<!-- https://dinfree.com/lecture/frontend/123_js_exam.html -->
